@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Main{
+
+
+     public static void main(String []args){
+
+        int x;
+
+        int y;
+
+        char znak;
+
+        Scanner in = new Scanner(System.in);
+
+        x = in.nextInt();
+
+        y = in.nextInt();
+
+        znak = in.next().charAt(0);
+
+
+        
+System.out.println("Podaj 1 liczbe");
+
+        System.out.println("Podaj 2 liczbe");
+
+        System.out.println("Podaj znak operacji na liczbach (+,-,*,/)");
+
+
+        
+if (znak == '+'){
+
+            System.out.println(x + y);
+
+        } else if (znak == '-'){
+
+            System.out.println(x - y);
+
+        } else if (znak == '*'){
+
+            System.out.println(x * y);
+
+        } else if (znak == '/'){
+
+            if (y != 0){
+
+                System.out.println(x / y);
+
+            }
+ else {
+ 
+               System.out.println("Nie dziel przez 0!");
+
+            }
+
+        }
+ 
+}
+
+}
